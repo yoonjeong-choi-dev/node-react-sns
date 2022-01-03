@@ -9,7 +9,7 @@
 ## Directory
 * 백엔드 및 프론트엔드로 나누어서 구현
   * 각 디렉터리의 CHANGELOG.md에 추가/변경 사항에 대한 히스토리 기록
-  * 로컬 테스트를 위한 .env.development는 깃에 저장
+  * 로컬 테스트를 위한 .development.env는 깃에 저장
 * server
   * Node.js + Express를 사용한 백엔드 애플리케이션
   * 사용 예정인 외부 서비스

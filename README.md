@@ -10,13 +10,13 @@
 * 백엔드 및 프론트엔드로 나누어서 구현
   * 각 디렉터리의 CHANGELOG.md에 추가/변경 사항에 대한 히스토리 기록
   * 로컬 테스트를 위한 .env.development는 깃에 저장
-* Server
- * Node.js + Express를 사용한 백엔드 애플리케이션
- * 사용 예정인 외부 서비스
-  * AWS RDS
-  * redis
-  * S3 : 정적 리소스 저장
-* Client
+* server
+  * Node.js + Express를 사용한 백엔드 애플리케이션
+  * 사용 예정인 외부 서비스
+    * AWS RDS
+    * redis
+    * S3 : 정적 리소스 저장
+* client
   * React를 사용한 프론트엔드 애플리케이션
   * 백엔드 애플리케이션 검증용
   * 우선 페이지/컴포넌트/유틸로 구조화

@@ -9,12 +9,12 @@
 package-lock.json
 .env
 .env.production
-photos/
+node_modules/
+node_modules
 
 
 ### React ###
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
 

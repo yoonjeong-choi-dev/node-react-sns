@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
-import axios from 'axios';
-import { IMAGE_ENDPOINT, API_ENDPOINT } from '../config.dev';
+import { fetch } from '../apis/commonAPI';
 
 
 const Container = styled.div`
@@ -43,16 +42,20 @@ const User = () => {
   const [user, setUser] = useState({});
 
   // 임시 코드
-  useEffect(async () => {
-    const res = await axios.get(API_ENDPOINT+'/user.json');
-    console.log(res);
-    setUser(res.data);
+  useEffect(() => {
+    const fetchData = async () => {
+      const res = await fetch('/user.json');
+      console.log(res);
+      setUser(res.data);
+    };
+    
+    fetchData();
   }, []);
 
   return (
     <Container>
       <Left>
-        <ProfileImage src={IMAGE_ENDPOINT+user.profile_image}/>
+        <ProfileImage src={user.profile_image}/>
       </Left>
       <Right>
         <RightRow height='40px'>
